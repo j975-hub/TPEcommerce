@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <test  name="Parametrization1">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://live.techpanda.org"/>
+
+        <classes>
+            <class name="TestClass.DemoParametrization"/>
+        </classes>
+    </test>
+
+
+    <test  name="Parametrization2">
+
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="https://www.selenium.dev/"/>
+
+        <classes>
+            <class name="TestClass.DemoParametrization"/>
+        </classes>
+    </test>
+
+</suite>
